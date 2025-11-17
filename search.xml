@@ -4,32 +4,6 @@
   
     
     <entry>
-      <title>Vmware</title>
-      <link href="/hexo-blog.github.io/2025/11/17/VMware%20copy/"/>
-      <url>/hexo-blog.github.io/2025/11/17/VMware%20copy/</url>
-      
-        <content type="html"><![CDATA[<h1 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h1><h3 id="虚拟机克隆-centos7"><a href="#虚拟机克隆-centos7" class="headerlink" title="虚拟机克隆(centos7)"></a>虚拟机克隆(centos7)</h3><p><strong>配置ip</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 配置ip</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure><p>将ONBOOT&#x3D;no改为yes，将BOOTPROTO&#x3D;dhcp改为BOOTPROTO&#x3D;static,并在后面增加几行内容：<br>IPADDR&#x3D;本机自定义ip<br>NETMASK&#x3D;255.255.255.0<br>GATEWAY&#x3D;虚拟机编辑的网关<br>DNS1&#x3D;119.29.29.29</p><p><strong>虚拟机克隆配置(主机和从机都要)</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 修改主机名</span><br><span class="line">vi /etc/hostname</span><br><span class="line"></span><br><span class="line"># 重启虚拟机</span><br><span class="line">reboot</span><br><span class="line"></span><br><span class="line"># 设置ip 和主机名(主机和从机都要)</span><br><span class="line">vi /etc/hosts</span><br><span class="line"></span><br><span class="line"># 相互测试</span><br><span class="line">ping ip</span><br><span class="line"></span><br><span class="line"># 停止测试</span><br><span class="line">ctrl + c</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/hexo-blog.github.io/2025/11/17/VMware/"/>
-      <url>/hexo-blog.github.io/2025/11/17/VMware/</url>
-      
-        <content type="html"><![CDATA[<h1 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h1><h3 id="虚拟机克隆-centos7"><a href="#虚拟机克隆-centos7" class="headerlink" title="虚拟机克隆(centos7)"></a>虚拟机克隆(centos7)</h3><p><strong>配置ip</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 配置ip</span><br><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-ens33</span><br></pre></td></tr></table></figure><p>将ONBOOT&#x3D;no改为yes，将BOOTPROTO&#x3D;dhcp改为BOOTPROTO&#x3D;static,并在后面增加几行内容：<br>IPADDR&#x3D;本机自定义ip<br>NETMASK&#x3D;255.255.255.0<br>GATEWAY&#x3D;虚拟机编辑的网关<br>DNS1&#x3D;119.29.29.29</p><p><strong>虚拟机克隆配置(主机和从机都要)</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 修改主机名</span><br><span class="line">vi /etc/hostname</span><br><span class="line"></span><br><span class="line"># 重启虚拟机</span><br><span class="line">reboot</span><br><span class="line"></span><br><span class="line"># 设置ip 和主机名(主机和从机都要)</span><br><span class="line">vi /etc/hosts</span><br><span class="line"></span><br><span class="line"># 相互测试</span><br><span class="line">ping ip</span><br><span class="line"></span><br><span class="line"># 停止测试</span><br><span class="line">ctrl + c</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/hexo-blog.github.io/2025/11/16/hello-world/"/>
       <url>/hexo-blog.github.io/2025/11/16/hello-world/</url>
